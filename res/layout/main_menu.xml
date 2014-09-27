@@ -2,24 +2,41 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    
-    <ImageView
-    	 	android:id="@+id/mainMenuImage"
-    	 	android:layout_width="match_parent"
-    	 	android:layout_height="match_parent"
-    	 	android:src="@drawable/background" 
-    	 	android:scaleType="fitXY">
-    	</ImageView>
+
+   <!--  <VideoView
+        android:id="@+id/bgVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" /> --> 
 
     <ImageButton
-        android:id="@+id/btnStart"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:clickable="true"
-        android:onClick="startClick"
-        android:src="@layout/startselector" />
+        android:layout_centerVertical="true"
+        android:onClick="joinClick"
+        android:src="@drawable/joinbtn" />
+
+    <ImageButton
+        android:id="@+id/btnSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnJoin"
+        android:onClick="skillsClick"
+        android:src="@drawable/swbtn" />
+
+    <ImageButton
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnJoin"
+        android:onClick="createClick"
+        android:src="@drawable/playbtn" />
 
 </RelativeLayout>
