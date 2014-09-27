@@ -66,7 +66,10 @@ public class YoloEngine {
 	public static Display display;
 	public static int display_x; 
 	public static int display_y; 
-//-----------------------------------------------------------------------------------------------------------		
+//-----------------------------------------------------------------------------------------------------------	
+
+//-------------------Player Sats & Info-----------------------------------------------------------------	
+	public static YoloPlayerInfo currentPlayerInfo;	
 	
 	public static Context context;
 }
